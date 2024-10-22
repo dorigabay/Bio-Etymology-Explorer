@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Bio Etymology Explorer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2 {
+            color: #e78753;
+        }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy for Bio Etymology Explorer</h1>
+    <p>Effective Date: October 22, 2024</p>
+
+    <p>At Bio Etymology Explorer, accessible from [your website URL], your privacy is important to us. This Privacy Policy document outlines how we collect, use, and share your information when you use our extension.</p>
+
+    <div id="policyContent">
+        <!-- Privacy policy content will be inserted here -->
+    </div>
+
+    <h2>Contact Information</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at: <a href="mailto:dorigabay@gmail.com">dorigabay@gmail.com</a></p>
+
+    <h2>Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+
+    <script>
+        // Fetch the privacy policy text from the .txt file
+        fetch('path/to/your/privacy_policy.txt') // Replace with your actual .txt file path
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('policyContent').innerHTML = data.replace(/\n/g, '<br>'); // Replace new lines with <br> for HTML formatting
+            })
+            .catch(error => {
+                console.error('Error fetching privacy policy:', error);
+                document.getElementById('policyContent').innerText = 'Privacy policy content could not be loaded.';
+            });
+    </script>
+</body>
+</html>
